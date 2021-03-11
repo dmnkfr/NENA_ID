@@ -125,9 +125,9 @@ ParticipantSummary = ParticipantInfo %>%
                 Mean_LetterCompAcc = round(mean(LetterCompAcc, na.rm = TRUE),digits = 2),
                 Mean_LetterCompSpeed = round(mean(LetterCompSpeed, na.rm = TRUE),digits = 2),
                 Mean_DigitSpanPercentCorTrials = round(mean(DigitSpanPercentCorTrials, na.rm = TRUE),digits = 2),
-                Mean_DigitSpanPercentCorDigits = round(mean(DigitSpanPercentCorDigits, na.rm = TRUE), digits = 2))
+                Mean_DigitSpanPercentCorDigits = round(mean(DigitSpanPercentCorDigits, na.rm = TRUE), digits = 2)
         )
-print(ParticipantSummary)
+# print(ParticipantSummary)
 # write into WD
 write.table(ParticipantInfo, "ParticipantInfo.txt",row.names = F)
 
@@ -136,5 +136,5 @@ pdf("ParticipantSummary.pdf")
 grid.table(t(ParticipantSummary))
 dev.off()
 
-# Check if nrow is correct // DOESNT WORK YET! Files incomplete!
+# Check if nrow is correct
 if(nrow(ParticipantInfo) == L1_Count + L2_Count) {print("SUCCESS!")}

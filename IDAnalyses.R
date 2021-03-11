@@ -18,6 +18,8 @@ if(!require(eeptools)){install.packages('eeptools')}
 library(eeptools)
 if(!require(gridExtra)){install.packages('gridExtra')}
 library(gridExtra)
+if(!require(plyr)){install.packages('plyr')}
+library(plyr)
 ###############################################################################
 ###############################################################################
 
