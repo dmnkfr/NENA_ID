@@ -128,8 +128,9 @@ ParticipantSummary = ParticipantInfo %>%
                 Mean_DigitSpanPercentCorDigits = round(mean(DigitSpanPercentCorDigits, na.rm = TRUE), digits = 2)
         )
 # print(ParticipantSummary)
-# write into WD
-write.table(ParticipantInfo, "ParticipantInfo.txt",row.names = F)
+# write into parent directory
+#write.table(ParticipantInfo, paste(setwd('..'),"/ParticipantInfo.txt", sep = ""),row.names = F)
+write.table(ParticipantInfo, "../ParticipantInfo.txt",row.names = F)
 
 # write summary as pdf
 pdf("ParticipantSummary.pdf")

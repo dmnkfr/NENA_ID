@@ -23,11 +23,11 @@ library(plyr)
 ###############################################################################
 ###############################################################################
 
-#path = "H:/2019_NENA/1_DATA/2_ANALYSES/ID TASKS/NENA_ID"
+path = "C:/Users/dofr2720/Desktop/NENA/NENA_ID"
 
 # DON'T CHANGE ANYTHING FROM HERE
 # set wd
-#setwd(path)
+setwd(path)
 # run the programs
 source("LetterCompAnalysis.R")
 source("ReadingSpanAnalysis.R")
