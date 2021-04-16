@@ -129,7 +129,6 @@ ParticipantSummary = ParticipantInfo %>%
         )
 # print(ParticipantSummary)
 # write into parent directory
-#write.table(ParticipantInfo, paste(setwd('..'),"/ParticipantInfo.txt", sep = ""),row.names = F)
 write.table(ParticipantInfo, "../ParticipantInfo.txt",row.names = F)
 
 # write summary as pdf
